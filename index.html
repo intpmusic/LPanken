@@ -3,98 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>魅力的な商品を今すぐチェック！</title>
+    <title>Baika Life Magazine 風LP</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .hero {
-            background-image: url('product-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            position: relative;
-            color: white;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .section {
+            margin-bottom: 40px;
         }
-        .hero h1 {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .content h2 {
+        .section h2 {
+            border-left: 5px solid #ff5733;
+            padding-left: 10px;
             color: #333;
         }
-        .content p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.5;
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .cta-button {
+        .card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
             display: inline-block;
             padding: 15px 30px;
             background: #ff5733;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
             font-size: 18px;
-        }
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .testimonial {
-            margin-bottom: 20px;
-        }
-        .testimonial p {
-            font-style: italic;
-            color: #555;
-        }
-        .testimonial .author {
-            font-weight: bold;
-            color: #333;
         }
     </style>
 </head>
 <body>
+    <div class="header">Baika Life Magazine</div>
     <div class="container">
-        <div class="hero">
-            <h1>新商品「Amazing Product」登場！</h1>
-        </div>
-        <div class="content">
-            <h2>あなたの生活をより豊かに</h2>
-            <p>「Amazing Product」は、最新の技術を駆使して開発された革新的な商品です。これまでにない体験を提供し、日常生活をより快適にします。</p>
-            <a href="#" class="cta-button">今すぐ購入</a>
-        </div>
-        <div class="testimonials">
-            <h2>お客様の声</h2>
-            <div class="testimonial">
-                <p>"この商品のおかげで毎日が楽しくなりました！"</p>
-                <p class="author">- 山田 太郎</p>
+        <div class="section">
+            <h2>最新記事</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="article1.jpg" alt="記事1">
+                    <p>キャンパスライフを充実させるためのヒント</p>
+                </div>
+                <div class="card">
+                    <img src="article2.jpg" alt="記事2">
+                    <p>学びの新しいスタイルを提案</p>
+                </div>
+                <div class="card">
+                    <img src="article3.jpg" alt="記事3">
+                    <p>イベント情報やインタビュー特集</p>
+                </div>
             </div>
-            <div class="testimonial">
-                <p>"使いやすくて、とても満足しています。"</p>
-                <p class="author">- 佐藤 花子</p>
+        </div>
+        <div class="section">
+            <h2>おすすめコンテンツ</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="feature1.jpg" alt="特集1">
+                    <p>学生の声を集めた特集</p>
+                </div>
+                <div class="card">
+                    <img src="feature2.jpg" alt="特集2">
+                    <p>未来に向けた学びのスタイル</p>
+                </div>
             </div>
+        </div>
+        <div class="cta">
+            <a href="#">もっと読む</a>
         </div>
     </div>
 </body>
