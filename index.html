@@ -9,66 +9,77 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #eef2f5;
         }
         .header {
             background: url('header-image.jpg') no-repeat center center/cover;
-            height: 300px;
+            height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
-            font-size: 2em;
+            font-size: 3em;
             font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .container {
-            max-width: 1100px;
-            margin: 20px auto;
+            max-width: 1200px;
+            margin: 30px auto;
             background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         .section h2 {
-            border-left: 5px solid #ff5733;
-            padding-left: 10px;
-            color: #333;
+            border-left: 7px solid #ff5733;
+            padding-left: 15px;
+            color: #222;
+            font-size: 24px;
         }
         .grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px;
         }
         .card {
-            flex: 1 1 calc(33.333% - 20px);
+            flex: 1 1 calc(25% - 25px);
             background: #fff;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
         }
         .card img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         .card p {
-            margin-top: 10px;
-            font-size: 14px;
+            margin-top: 12px;
+            font-size: 16px;
+            color: #555;
         }
         .cta {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
         }
         .cta a {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 18px 35px;
             background: #ff5733;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: #d94521;
         }
     </style>
 </head>
@@ -90,6 +101,10 @@
                     <img src="article3.jpg" alt="記事3">
                     <p>イベント情報やインタビュー特集</p>
                 </div>
+                <div class="card">
+                    <img src="article4.jpg" alt="記事4">
+                    <p>最新の学びのトレンド</p>
+                </div>
             </div>
         </div>
         <div class="section">
@@ -102,6 +117,14 @@
                 <div class="card">
                     <img src="feature2.jpg" alt="特集2">
                     <p>未来に向けた学びのスタイル</p>
+                </div>
+                <div class="card">
+                    <img src="feature3.jpg" alt="特集3">
+                    <p>学びのためのライフハック</p>
+                </div>
+                <div class="card">
+                    <img src="feature4.jpg" alt="特集4">
+                    <p>成功した学生のストーリー</p>
                 </div>
             </div>
         </div>
