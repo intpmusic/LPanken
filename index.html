@@ -24,10 +24,9 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
+            width: 100%; /* ここで幅を100%に設定 */
+            margin: 0; /* 左右の余白をなくす */
+            padding: 30px 0; /* 上下の余白を残して、左右の余白をなくす */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
@@ -81,7 +80,6 @@
         .cta a:hover {
             background: #d94521;
         }
-        /* 二つの画像を縦に表示する新しいセクション */
         .dual-image-section {
             display: flex;
             flex-direction: column;
@@ -95,7 +93,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        /* 3つ目の画像用 */
         .dual-image-section .extra-img {
             width: 100%;
             height: auto;
@@ -129,7 +126,7 @@
             </div>
         </div>
         
-        <!-- 新しい二つの画像を縦に表示するセクション -->
+        <!-- 二つの画像を縦に表示するセクション -->
         <div class="dual-image-section">
             <img src="dual-image1.jpg" alt="画像1">
             <img src="dual-image2.jpg" alt="画像2">
