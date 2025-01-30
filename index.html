@@ -3,45 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シンプルなLP</title>
+    <title>魅力的な商品を今すぐチェック！</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
+            max-width: 800px;
+            margin: 0 auto;
             background: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        .hero {
+            background-image: url('product-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
             color: #333;
         }
-        p {
+        .content p {
             font-size: 16px;
             color: #666;
+            line-height: 1.5;
         }
         .cta-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px;
             background: #ff5733;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            font-size: 18px;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+        }
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+        .testimonial .author {
+            font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>魅力的な商品を今すぐチェック！</h1>
-        <p>この商品はあなたの生活をより便利にします。今すぐ詳細を確認しましょう！</p>
-        <a href="#" class="cta-button">今すぐ購入</a>
+        <div class="hero">
+            <h1>新商品「Amazing Product」登場！</h1>
+        </div>
+        <div class="content">
+            <h2>あなたの生活をより豊かに</h2>
+            <p>「Amazing Product」は、最新の技術を駆使して開発された革新的な商品です。これまでにない体験を提供し、日常生活をより快適にします。</p>
+            <a href="#" class="cta-button">今すぐ購入</a>
+        </div>
+        <div class="testimonials">
+            <h2>お客様の声</h2>
+            <div class="testimonial">
+                <p>"この商品のおかげで毎日が楽しくなりました！"</p>
+                <p class="author">- 山田 太郎</p>
+            </div>
+            <div class="testimonial">
+                <p>"使いやすくて、とても満足しています。"</p>
+                <p class="author">- 佐藤 花子</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
